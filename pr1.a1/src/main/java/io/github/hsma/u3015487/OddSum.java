@@ -11,6 +11,7 @@ public class OddSum {
         do {
             System.out.println("Bitte gib eine beliebige, positive Ganzzahl ein (negativ für Abbruch): ");
             userInput = scanner.nextInt();
+            // Berechnung für letzte Ausführung ignorieren
             if (userInput < 0) {
                 continue;
             }
