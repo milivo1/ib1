@@ -12,7 +12,11 @@ Quellcode komplett untersagt!
 
 # pr1.a1.2
 
-#### `OddSum.java`
+#### `EvenNumbersSum.java`
+
+#### `src/main/resources/pr1.a1.2.drawio`
+
+#### `src/main/resources/pr1.a1.2.svg`
 
 Gegeben sei die folgende Aufgabe: Lassen Sie den Benutzer ganze Zahlen (int) über die
 Tastatur eingeben. Alle geraden Zahlen, die der Benutzer eingibt, sollen aufsummiert werden.
