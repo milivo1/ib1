@@ -21,3 +21,8 @@ Anzahl aller eingegeben Zahlen ausgeben. Die letzte Zahl soll dabei nicht mit be
 werden.
 Entwickeln Sie zuerst ein Aktivitätsdiagramm und dann unter der Kommandozeile ein Java-
 Programm, dass die obige Aufgabenstellung realisiert.
+
+# Manual compilation
+
+- `javac -d out src/main/java/io/github/hsma/u3015487/Fahrenheit.java`
+- `java -cp out io.github.hsma.u3015487.Fahrenheit`
