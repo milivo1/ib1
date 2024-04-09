@@ -11,7 +11,7 @@ public class Fahrenheit {
     public static void main(String[] args) {
 
         // Benötigte Variablen deklarieren
-        double epsilon = 0.005;
+        double epsilon = 1.005;
         double f = 0.0, c;
 
         // Für die Eingabe von der Tastatur
@@ -29,7 +29,7 @@ public class Fahrenheit {
             // Ausgabe des Ergebnis
             System.out.println("... in Celsius: " + c + " Grad \n");
             // Schleife durch Eingabe von 1 verlassen?
-        } while (Math.abs(f - 1) > epsilon);
+        } while (Math.abs(f) > epsilon);
 
         System.out.println("... und tschüss");
         in.close();
