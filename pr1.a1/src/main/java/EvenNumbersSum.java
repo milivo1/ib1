@@ -1,5 +1,3 @@
-package io.github.hsma.u3015487;
-
 import java.util.Scanner;
 
 public class EvenNumbersSum {
