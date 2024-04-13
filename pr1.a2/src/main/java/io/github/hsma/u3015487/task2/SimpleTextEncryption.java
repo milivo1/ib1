@@ -23,6 +23,7 @@ public class SimpleTextEncryption {
      * Die Methoden, die einen String in einem Rutsch in ein Array of Character und umgekehrt umwandeln, dürfen nicht verwendet werden.
      * -> new String(char[])
      * -> "Text".toCharArray()
+     * -> StringBuilder.toString()
      *
      * @param text
      * @return
