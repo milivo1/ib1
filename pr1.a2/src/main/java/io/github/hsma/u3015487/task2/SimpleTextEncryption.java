@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Programm zur einfachen verschlüsselung von Text
+ *
  */
 public class SimpleTextEncryption {
 
@@ -19,20 +20,25 @@ public class SimpleTextEncryption {
     /**
      * "Verschlüsselt" den Text indem jeder Buchstabe um eine Stelle (A->B) verschoben wird
      *
+     * Die Methoden, die einen String in einem Rutsch in ein Array of Character und umgekehrt umwandeln, dürfen nicht verwendet werden.
+     * -> new String(char[])
+     * -> "Text".toCharArray()
+     *
      * @param text
      * @return
      */
     private static String encrypt(final String text) {
-        final StringBuilder builder = new StringBuilder();
-        for (final char ch : text.toCharArray()) {
-            // überspringe alle Zeichen die kein Buchstaben repräsentieren
-            if (!Character.isLetter(ch)) {
-                builder.append(ch);
+        String encrypted = "";
+        for (int i = 0; i < text.length(); i++) {
+            final char character = text.charAt(i);
+            if (!Character.isLetter(character)) {
+                encrypted += character;
                 continue;
             }
-            final int nextChar = ch + 1;
-            builder.append((char) nextChar);
+            final int nextChar = character + 1;
+            encrypted += (char)nextChar;
         }
-        return builder.toString();
+
+        return encrypted;
     }
 }
