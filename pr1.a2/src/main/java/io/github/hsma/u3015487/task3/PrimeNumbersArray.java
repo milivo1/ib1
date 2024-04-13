@@ -11,11 +11,11 @@ public class PrimeNumbersArray {
         try (final Scanner in = new Scanner(System.in)) {
             System.out.println("Bitte eine positive Ganzzahl eingeben zur Berechnung der Primzahlen:");
             final int number = in.nextInt();
-            final boolean[] primeNumbers = new boolean[number + 1];
+            final boolean[] numbersFlagged = new boolean[number + 1];
 
-            initializePrimeNumbers(number, primeNumbers);
-            markPrimeNumbers(number, primeNumbers);
-            printPrimes(primeNumbers);
+            initializePrimeNumbers(number, numbersFlagged);
+            markPrimeNumbers(number, numbersFlagged);
+            printPrimes(numbersFlagged);
 
             System.out.println("Tschüss!");
         }
