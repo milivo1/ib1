@@ -1,17 +1,18 @@
 package io.github.hsma.u3015487.task4;
 
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * Programm zur Umwandlung von Ganzzahlen zu römischen Zahlen
  * Größtmögliche, darstellbare Zahl ist 3999 -> MMMCMXCIX;
  */
 public class RomanNumerals {
+    static final int[] romanDecimals = new int[13];
+    static final String[] romanNumerals = new String[13];
 
-    public static void main(String[] args) {
-        final int[] romanDecimals = new int[13];
-        final String[] romanNumerals = new String[13];
-
+    static {
         //Initialisieren des Arrays mit den notwendigen Kombinationen, abgeleitet aus den Anforderungen.
         romanDecimals[0] = 1000; romanNumerals[0] = "M";
         romanDecimals[1] = 900; romanNumerals[1] = "CM"; // mögliche Subtraktion
@@ -26,7 +27,9 @@ public class RomanNumerals {
         romanDecimals[10] = 5; romanNumerals[10] = "V";
         romanDecimals[11] = 4; romanNumerals[11] = "IV"; // mögliche Subtraktion
         romanDecimals[12] = 1; romanNumerals[12] = "I";
+    }
 
+    public static void main(String[] args) {
 
         try (final Scanner in = new Scanner(System.in)) {
             System.out.println("Bitte eine Ganzzahl zwischen 1 und 3999 eingeben:");
@@ -37,30 +40,62 @@ public class RomanNumerals {
                 throw new RuntimeException("Zahl musst zwischen 1 und 3999 liegen");
             }
 
-            final String romanNumeral = toRomanNumeral(userNumber, romanDecimals, romanNumerals);
+            final String romanNumeral = toRomanNumeral(userNumber);
+            final String romanNumeral2 = toRomanNumeral2(userNumber);
 
             System.out.println("Römische Zahl: " + romanNumeral);
+            System.out.println("Römische Zahl: " + romanNumeral2);
             System.out.println("Tschüss!");
         }
+    }
+
+    /**
+     * Alternative Vorgehensweise durch einfache Ersetzungen
+     *
+     * @param number
+     * @return
+     */
+    static String toRomanNumeral2(final int number) {
+        // Bildet die Zahl erstmal als eine Reihe von römischen einsen ab. 5 wird also zu IIIII
+        final String numbersAsString = IntStream.range(0, number)
+                .mapToObj(ignored ->  "I")
+                .collect(Collectors.joining());
+        /**
+         * Ersetzt die Zahlen nacheinander:
+         * - erstmal die einstelligen Grundzahlen und Zwischenzahlen von der kleinsten zur größten
+         * - wendet anschließend rückärts die Grund/Zwischenzahl Kombinationen aus die subtrahiert werden können
+         */
+        return numbersAsString
+                .replaceAll("IIIII", "V")
+                .replaceAll("VV", "X")
+                .replaceAll("XXXXX", "L")
+                .replaceAll("LL", "C")
+                .replaceAll("CCCCC", "D")
+                .replaceAll("DD", "M")
+                .replaceAll("DCCCC", "CM")
+                .replaceAll("CCCC", "CD")
+                .replaceAll("LXXXX", "XC")
+                .replaceAll("XXXX", "XL")
+                .replaceAll("VIIII", "IX")
+                .replaceAll("IIII", "IV")
+                ;
     }
 
     /**
      * Ermittlung der römischen Zahl durch wiederholtes subtrahieren des nahestehendsten dezimalen Äquivalents mit Hilfe von Rekursion
      *
      * @param number
-     * @param decimals
-     * @param numerals
      * @return
      */
-    private static String toRomanNumeral(final int number, final int[] decimals, final String[] numerals) {
-        final int floorIndex =  floorNumberIndex(number, decimals);
-        final int romanDecimal = decimals[floorIndex];
-        final String romanNumeral = numerals[floorIndex];
+    static String toRomanNumeral(final int number) {
+        final int floorIndex =  floorIndex(number);
+        final int romanDecimal = romanDecimals[floorIndex];
+        final String romanNumeral = romanNumerals[floorIndex];
 
         if ( number == romanDecimal) {
             return romanNumeral;
         }
-        return numerals[floorIndex] + toRomanNumeral((number-romanDecimal), decimals, numerals);
+        return romanNumerals[floorIndex] + toRomanNumeral((number-romanDecimal));
     }
 
     /**
@@ -68,9 +103,9 @@ public class RomanNumerals {
      * @param number
      * @return array index
      */
-    private static int floorNumberIndex(final int number, final int[] decimals) {
-        for (int i = 0; i < decimals.length; i++) {
-            final int decimal = decimals[i];
+    static int floorIndex(final int number) {
+        for (int i = 0; i < romanDecimals.length; i++) {
+            final int decimal = romanDecimals[i];
             if (decimal <= number) {
                 return i;
             }
