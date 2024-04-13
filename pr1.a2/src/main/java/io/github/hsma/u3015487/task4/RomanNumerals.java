@@ -49,18 +49,14 @@ public class RomanNumerals {
 
     /**
      * Alternative Vorgehensweise durch einfache Ersetzungen
-     *
+     * Bildet die Zahl erstmal als eine Reihe von römischen einsen ab. 5 wird also zu IIIII
+     * Ersetzt danach die Zahlen nacheinander in Reihenfolge:
+     * - erstmal die einstelligen Grundzahlen und Zwischenzahlen von der kleinsten zur größten
+     * - wendet anschließend rückärts die Grund/Zwischenzahl Kombinationen aus die subtrahiert werden können
      * @param number
      * @return
      */
     static String toRomanNumeral2(final int number) {
-        /**
-         * Bildet die Zahl erstmal als eine Reihe von römischen einsen ab. 5 wird also zu IIIII
-         *
-         * Ersetzt danach die Zahlen nacheinander in Reihenfolge:
-         * - erstmal die einstelligen Grundzahlen und Zwischenzahlen von der kleinsten zur größten
-         * - wendet anschließend rückärts die Grund/Zwischenzahl Kombinationen aus die subtrahiert werden können
-         */
         return "I".repeat(number)
                 .replaceAll("IIIII", "V") // ersetzen durch 5
                 .replaceAll("VV", "X") // ersetzen durch 10
