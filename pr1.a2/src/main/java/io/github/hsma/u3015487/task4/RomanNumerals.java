@@ -66,18 +66,18 @@ public class RomanNumerals {
          * - wendet anschließend rückärts die Grund/Zwischenzahl Kombinationen aus die subtrahiert werden können
          */
         return numbersAsString
-                .replaceAll("IIIII", "V")
-                .replaceAll("VV", "X")
-                .replaceAll("XXXXX", "L")
-                .replaceAll("LL", "C")
-                .replaceAll("CCCCC", "D")
-                .replaceAll("DD", "M")
-                .replaceAll("DCCCC", "CM")
-                .replaceAll("CCCC", "CD")
-                .replaceAll("LXXXX", "XC")
-                .replaceAll("XXXX", "XL")
-                .replaceAll("VIIII", "IX")
-                .replaceAll("IIII", "IV")
+                .replaceAll("IIIII", "V") // ersetzen durch 5
+                .replaceAll("VV", "X") // ersetzen durch 10
+                .replaceAll("XXXXX", "L") // ersetzen durch 50
+                .replaceAll("LL", "C") // ersetzen durch 100
+                .replaceAll("CCCCC", "D") // ersetzen durch 500
+                .replaceAll("DD", "M") // ersetzen durch 1000
+                .replaceAll("DCCCC", "CM") // ersetzen durch 900
+                .replaceAll("CCCC", "CD") // ersetzen durch 400
+                .replaceAll("LXXXX", "XC") // ersetzen durch 90
+                .replaceAll("XXXX", "XL") // ersetzen durch 40
+                .replaceAll("VIIII", "IX") // ersetzen durch 9
+                .replaceAll("IIII", "IV") // ersetzen durch 4
                 ;
     }
 
