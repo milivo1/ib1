@@ -1,8 +1,6 @@
 package io.github.hsma.u3015487.task4;
 
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  * Programm zur Umwandlung von Ganzzahlen zu römischen Zahlen
@@ -56,16 +54,14 @@ public class RomanNumerals {
      * @return
      */
     static String toRomanNumeral2(final int number) {
-        // Bildet die Zahl erstmal als eine Reihe von römischen einsen ab. 5 wird also zu IIIII
-        final String numbersAsString = IntStream.range(0, number)
-                .mapToObj(ignored ->  "I")
-                .collect(Collectors.joining());
         /**
-         * Ersetzt die Zahlen nacheinander:
+         * Bildet die Zahl erstmal als eine Reihe von römischen einsen ab. 5 wird also zu IIIII
+         *
+         * Ersetzt danach die Zahlen nacheinander in Reihenfolge:
          * - erstmal die einstelligen Grundzahlen und Zwischenzahlen von der kleinsten zur größten
          * - wendet anschließend rückärts die Grund/Zwischenzahl Kombinationen aus die subtrahiert werden können
          */
-        return numbersAsString
+        return "I".repeat(number)
                 .replaceAll("IIIII", "V") // ersetzen durch 5
                 .replaceAll("VV", "X") // ersetzen durch 10
                 .replaceAll("XXXXX", "L") // ersetzen durch 50
