@@ -28,12 +28,11 @@ public class PrimeNumbersArray {
      * @param primeNumbers
      */
     private static void markPrimeNumbers(final int number, final boolean[] primeNumbers) {
-        for (int i = 2; i <= number; i++) {
-            if (!primeNumbers[i]) {
-                continue;
-            }
-            for (int j = i + i; j <= number; j = j + i) {
-                primeNumbers[j] = false;
+        for (int i = 2; i+i < number; i++) {
+            if (primeNumbers[i]) {
+                for (int j = i + i; j <= number; j = j + i) {
+                    primeNumbers[j] = false;
+                }
             }
         }
     }
