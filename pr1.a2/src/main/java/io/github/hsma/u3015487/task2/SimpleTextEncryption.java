@@ -21,9 +21,9 @@ public class SimpleTextEncryption {
      * "Verschlüsselt" den Text indem jeder Buchstabe um eine Stelle (A->B) verschoben wird
      *
      * Die Methoden, die einen String in einem Rutsch in ein Array of Character und umgekehrt umwandeln, dürfen nicht verwendet werden.
-     * -> new String(char[])
-     * -> "Text".toCharArray()
-     * -> StringBuilder.toString()
+     * -> new String(char[]) ?
+     * -> "Text".toCharArray() ?
+     * -> StringBuilder.toString() ?
      *
      * @param text
      * @return
@@ -36,7 +36,7 @@ public class SimpleTextEncryption {
                 encrypted += character;
                 continue;
             }
-            final int nextChar = character + 1;
+            final int nextChar = character == 'Z' || character == 'z'  ? character - 25 : character + 1;
             encrypted += (char)nextChar;
         }
 
