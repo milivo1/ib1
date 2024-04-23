@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" modified="2024-04-23T18:33:04.762Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="bQKy24ps7q7GPl53u5UV" version="24.2.3" type="device">
+  <diagram name="Page-1" id="PgNjhU1LjDGuAxVTJysv">
+    <mxGraphModel dx="3844" dy="2035" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h4w26RSLPL-8UDytEYK6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="G8UXR2RvoSNgQStM8z7o-1" target="iZ8uWK1BLbyBL1zNR7Qy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G8UXR2RvoSNgQStM8z7o-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="-2040.6100000000001" y="-1074" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G8UXR2RvoSNgQStM8z7o-4" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="-2036.7900000000002" y="-108.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iZ8uWK1BLbyBL1zNR7Qy-2" target="h4w26RSLPL-8UDytEYK6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iZ8uWK1BLbyBL1zNR7Qy-2" value="&lt;div&gt;Erstellen eines leeren&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Arrays für die Dezimalzahlrepräsentation&lt;/span&gt;&lt;/div&gt;&lt;b&gt;romanDecimals = new int[13]&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-2160.49" y="-1004" width="269.75" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iZ8uWK1BLbyBL1zNR7Qy-11" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Primzahlberechnung gemäß&amp;nbsp;&lt;/b&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;&quot;Sieb des Eratosthenes&quot;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="-2128.62" y="-1123" width="209" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iZ8uWK1BLbyBL1zNR7Qy-37" target="h4w26RSLPL-8UDytEYK6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iZ8uWK1BLbyBL1zNR7Qy-37" value="&lt;div&gt;Eingabe number&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-2088.9799999999996" y="-599" width="134.38" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-1" target="h4w26RSLPL-8UDytEYK6-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-1" value="&lt;div&gt;Erstelle&amp;nbsp; eines leeren&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Arrays für die&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;römische Zahlenrepräsentation&lt;/span&gt;&lt;/div&gt;&lt;b&gt;romanNumerals = new String[13]&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2157.5" y="-918.5" width="269.75" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;endArrow=none;endFill=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-2" target="iZ8uWK1BLbyBL1zNR7Qy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-2" value="Repräsentation für alle&lt;div&gt;Grundzahlen, Zwischenzahlen und den möglichen Subtraktionen&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-2412" y="-1093" width="212" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2021.66" y="-382" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-3" target="h4w26RSLPL-8UDytEYK6-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-28" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%26gt%3Bnumber%20MINUS%20romanDecimal%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-1877%22%20y%3D%22-337%22%20width%3D%22124%22%20height%3D%2242%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h4w26RSLPL-8UDytEYK6-27">
+          <mxGeometry x="0.4671" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-29" value="[number &amp;lt; 0 || number &amp;gt; 3999]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h4w26RSLPL-8UDytEYK6-27">
+          <mxGeometry x="0.4544" y="-4" relative="1" as="geometry">
+            <mxPoint x="49" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-3" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2038.28" y="-523" width="33" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-6" target="G8UXR2RvoSNgQStM8z7o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-6" value="&lt;div&gt;Ausgabe römische Zahl&lt;/div&gt;&lt;div&gt;&lt;b&gt;romanNumeral&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2088.9799999999996" y="-193.5" width="134.38" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-18" target="h4w26RSLPL-8UDytEYK6-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-12" target="h4w26RSLPL-8UDytEYK6-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-15" target="h4w26RSLPL-8UDytEYK6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-15" value="&lt;div&gt;number MINUS romanDecimal&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1905.66" y="-469.5" width="124" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-18" target="h4w26RSLPL-8UDytEYK6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-21" value="[number == romanDecimal]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h4w26RSLPL-8UDytEYK6-20">
+          <mxGeometry x="-0.5714" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-18" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2038.28" y="-283.5" width="33" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-2" target="h4w26RSLPL-8UDytEYK6-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2320" y="-920" as="sourcePoint" />
+            <mxPoint x="-2148" y="-869" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-26" target="G8UXR2RvoSNgQStM8z7o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-26" value="Fehlerausgabe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2253.16" y="-405.5" width="104.5" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-3" target="h4w26RSLPL-8UDytEYK6-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2021.66" y="-382" as="targetPoint" />
+            <mxPoint x="-2021.66" y="-489.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-12" value="&lt;div&gt;Subtrahieren der nächstkleineren Zahl aus dem Dezimalzahlen Array&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2115.38" y="-442.5" width="187.19" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-33" value="&lt;div&gt;römische Zahl des romanNumerals Arrays konkatenieren in &lt;b&gt;romanNumeral&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2112.66" y="-368.5" width="187.19" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-34" target="h4w26RSLPL-8UDytEYK6-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-34" value="&lt;div&gt;Initialisieren des&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Arrays für die Dezimalzahlrepräsentation mit absteigenden Werten. Größter Wert (1000) = Index 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2157.5" y="-824" width="269.75" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h4w26RSLPL-8UDytEYK6-35" target="iZ8uWK1BLbyBL1zNR7Qy-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-35" value="&lt;div&gt;Initialisieren des&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Arrays für die römische Zahlenrepräsentation mit absteigenden Werten. Größter Wert (M) = Index 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2156.67" y="-719" width="269.75" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="h4w26RSLPL-8UDytEYK6-39" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-2445" y="-1139" width="701" height="1122" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
