@@ -1,0 +1,30 @@
+package Caeser;
+import java.util.Scanner;
+public class Caeser {
+		public static void main(String[]args) {
+			Scanner scanner=new Scanner(System.in);
+
+			
+			System.out.println("Bitte geben Sie einen Text ein, der verschlüsselt werden soll.");
+			String input=scanner.nextLine();
+			String encryptedUserinput=encryptText(input);
+			System.out.println("Verschlüsselter text:"+" "+encryptedUserinput);
+		}
+
+			
+			public static String encryptText(String text) {
+				String encryptedText="";
+				for(int i=0; i<text.length();i++) {
+					char ch= text.charAt(i);
+						if(!Character.isLetter(ch)||ch=='Ä'|| ch=='ä'|| ch=='Ö'|| ch=='ö'|| ch=='ü'|| ch=='Ü'|| ch=='ß') {							
+							encryptedText+=ch;
+							continue;
+						
+														}
+				
+					int nextChar = ch == 'Z' || ch == 'z'  ? ch - 25 : ch + 1;
+				    encryptedText+=(char)nextChar;
+			}	
+				    return encryptedText;
+			}		
+}
